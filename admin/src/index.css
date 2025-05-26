@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fond vert doux pour toute l'application */
+body,
+#root {
+  background-color: #f0fff4;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  @apply hidden
+}

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.active hr {
+  @apply block
+}
+
+/* Fond vert doux pour toute l'application */
+body,
+#root {
+  background-color: #f0fff4;
+  min-height: 100vh;
+}
+
+/* Transparence pour la navbar */
+nav {
+  background-color: rgba(240, 255, 244, 0.9) !important;
+  backdrop-filter: blur(8px);
+}
+
+::-webkit-scrollbar {
+  @apply hidden
+}
+
+@media (max-width:740px) {
+  .active p{
+    @apply text-white bg-prim
+  }
+}
